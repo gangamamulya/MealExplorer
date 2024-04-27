@@ -49,6 +49,31 @@ MealExplorer is structured using the MVVM (Model-View-ViewModel) architecture pa
 - `MealDetailedServiceProtocol`: Interface for the detailed meal fetching service.
 - `MealServiceProtocol`: Interface for the meal fetching service.
 
+### Network Operations
+
+- **Fetching List of Desserts**:
+- Utilizes `URLSession` to send request to `https://themealdb.com/api/json/v1/1/filter.php?c=Dessert`.
+- Processes the JSON response to populate the list of meals.
+
+- **Fetching Meal Details**:
+- Sends a GET request to `https://themealdb.com/api/json/v1/1/lookup.php?i=MEAL_ID` using `URLSession`.
+- Decodes the JSON response into detailed meal objects using `JSONDecoder`.
+
+This implementation ensures that network requests are handled asynchronously, allowing for a smooth and responsive user experience. Error handling is integrated to manage issues such as network failures or data decoding errors effectively.
+
+### Handling Null or Empty Values
+
+MealExplorer includes sophisticated logic to handle null or empty values from the JSON responses effectively:
+
+- **Implementation**: Using Swift's `Mirror` API, the app reflects on each `MealDetail` object to dynamically access its properties.
+- **Conditional Filtering**: It checks each property (ingredient or measurement) for `nil` or empty strings.
+- **Data Integrity**: By excluding null or empty values, MealExplorer ensures that only complete and accurate data is shown in the user interface.
+
+## Demo GIF
+
+See MealMate in action:
+![MealExploer Execution](Demo.gif)
+
 ## Testing
 
 MealExplorer includes comprehensive testing using mock services for different data scenarios:
