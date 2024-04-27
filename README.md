@@ -9,7 +9,10 @@ MealExplorer is a native iOS application developed in SwiftUI, designed to help 
 
 ## Prerequisites
 
-- Xcode 15 or later
+- Xcode 15.2 or later
+- iOS 17.2 or later
+- Swift 5 or later
+
 
 ## Installation
 
@@ -69,10 +72,11 @@ MealExplorer includes sophisticated logic to handle null or empty values from th
 - **Conditional Filtering**: It checks each property (ingredient or measurement) for `nil` or empty strings.
 - **Data Integrity**: By excluding null or empty values, MealExplorer ensures that only complete and accurate data is shown in the user interface.
 
-## Demo GIF
+## Demo Video
 
-See MealMate in action:
-![MealExploer Execution](Demo.gif)
+See MealExplorer in action:
+![MealExplorer Execution](https://github.com/gangamamulya/MealExplorer/assets/88301130/9f369a39-376a-4aab-87be-328838f62312)
+
 
 ## Testing
 
