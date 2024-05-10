@@ -75,7 +75,9 @@ MealExplorer includes sophisticated logic to handle null or empty values from th
 ## Demo Video
 
 See MealExplorer in action:
-![MealExplorer Execution](https://github.com/gangamamulya/MealExplorer/assets/88301130/9f369a39-376a-4aab-87be-328838f62312)
+
+https://github.com/gangamamulya/MealExplorer/assets/88301130/8c9e97ad-8fa5-4997-b5cb-f9d5ccc55036
+
 
 
 ## Testing
